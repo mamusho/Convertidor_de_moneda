@@ -1,7 +1,5 @@
 package com.convertidor.logica;
 
-import java.text.DecimalFormat;
-
 public class ConvertirMoneda {
 
 	public ConvertirMoneda() {
