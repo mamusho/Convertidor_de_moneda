@@ -54,6 +54,7 @@ public class SelectorDeConversion extends JFrame {
 				conversor.setVisible(true);
 				conversor.setLocationRelativeTo(null);
 				dispose();
+				
 			}
 		});
 		btnMoneda.setBounds(23, 36, 142, 52);

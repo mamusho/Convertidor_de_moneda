@@ -31,6 +31,7 @@ public class Conversor extends JFrame {
 	private JPanel contentPane;
 	private JTextField txtEntrada;
 	
+
 	/*
 	 * Se crea instancia fuera del metodo para que no se cree cada que se haga click en el btn
 	 */
@@ -178,7 +179,7 @@ public class Conversor extends JFrame {
 					
 					
 					convertido = convertir.convierte(deCambio, aCambio, numeroCantidad);
-					cantidadConvertida.setText("$" + formatear.format(convertido));
+					cantidadConvertida.setText(formatear.format(convertido) );
 
 					/*
 					 * prueba en consola para ver el resultado
@@ -235,5 +236,7 @@ public class Conversor extends JFrame {
 		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\YinoskI Pc Custom\\eclipse-workspace\\Conversor.de.moneda\\images\\background2.jpg"));
 		lblNewLabel.setBounds(0, 0, 247, 344);
 		contentPane.add(lblNewLabel);
+		
+		
 	}
 }
