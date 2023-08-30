@@ -6,7 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
-import com.convertidor.logica.ConvertirMoneda;
+import com.convertidor.logica.Convertir;
 import com.convertidor.persistencias.Monedas;
 
 import javax.swing.JComboBox;
@@ -34,7 +34,7 @@ public class Conversor extends JFrame {
 	/*
 	 * Se crea instancia fuera del metodo para que no se cree cada que se haga click en el btn
 	 */
-	ConvertirMoneda convertirMoneda = new ConvertirMoneda();
+	Convertir convertir = new Convertir();
 	
 	Monedas monedas = new Monedas();
 	
@@ -177,7 +177,7 @@ public class Conversor extends JFrame {
 					}
 					
 					
-					convertido = convertirMoneda.convierte(deCambio, aCambio, numeroCantidad);
+					convertido = convertir.convierte(deCambio, aCambio, numeroCantidad);
 					cantidadConvertida.setText("$" + formatear.format(convertido));
 
 					/*

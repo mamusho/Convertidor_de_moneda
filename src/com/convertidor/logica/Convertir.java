@@ -1,8 +1,8 @@
 package com.convertidor.logica;
 
-public class ConvertirMoneda {
+public class Convertir {
 
-	public ConvertirMoneda() {
+	public Convertir() {
 		
 	}
 	
